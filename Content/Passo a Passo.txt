@@ -1,0 +1,16 @@
+1º Conteúdo com txt - - - - - - - - - - - - - - -
+"O primeiro logotipo
+O primeiro logotipo da Apple, criado em 1976 por Ronald Wayne, mostrava Newton sentado sob uma macieira. 
+No entanto, esse design foi considerado muito detalhado e complexo.
+[IMAGEM 1º LOGO DA APPLE]
+.....
+"
+
+2º Sketch do corpo do site  - - - - - - - - - - - - - - -
+Com Microsoft Whiteboard ou MockFlow
+
+3º Prototipagem do Sketch- - - - - - - - - - - - - - -
+Com Figma ou MockFlow
+
+4º Codificar com base no Protótipo- - - - - - - - - - - - - - -
+Primeiro conteúdo com Html depois estilizar com Css e finalmente as interações com JS...

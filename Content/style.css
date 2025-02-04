@@ -1,0 +1,272 @@
+@charset "UTF-8";
+
+/*IMPORTAÇÃO DE FONT EXTERNA*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fredericka+the+Great&family=Kaushan+Script&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*IMPORTAÇÃO DE FONT INTERNA*/
+@font-face{
+    font-family: 'Apple';
+    src: url('idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+/*VARIAVEIS EM CSS:*/
+:root{
+    --corAC: #BBE4F2;
+    --corAE: #5b8aaa;
+    --corB: #e7f2ff;
+    --corP: #0C0910;
+
+    --fontPadrao: Arial, Verdana, Helvetica, sans-serif;
+    --fontDestaque: 'Bebas Neue', cursive; /*Font External*/
+    --fontPerso: 'Apple', cursive; /*Font Internal*/
+}
+
+/*MODIFICAÇÃO GLOBAL*/
+*{  
+    padding: 0px;
+    margin: 0px /*DEIXAR 0 DEPOIS DEIXAR 0 DEPOIS DEIXAR 0 DEPOIS DEIXAR 0 DEPOIS DEIXAR 0 DEPOIS DEIXAR 0 DEPOISDEIXAR 0 DEPOISDEIXAR 0 DEPOIS*/
+}
+
+body{
+    background-image: linear-gradient(to bottom, var(--corAC), var(--corAE));
+    
+   
+}
+
+/* CABEÇALHO =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  = */
+header{
+    color:var(--corB);
+    background-color: var(--corP);
+    text-align: center;
+
+    padding: 40px;
+
+}
+
+header > h1{
+    font-family: var(--fontDestaque);
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.514);
+}
+
+header > p{
+    font-size: 1.2em;
+    /* QUANDO COLOCOU EM WIDTH DE 500 ELE AUTOMATICAMENTE VIROU UM BLOCK */
+    max-width: 500px;
+    margin: auto;
+}
+
+nav{
+    color:var(--corB);
+    background-color: var(--corAE);
+    padding: 10px;
+
+    box-shadow: 0px 3px 10px 3px rgba(0, 0, 0, 0.450);
+}
+
+nav > a{
+    transition: 0.4s;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--corB);
+    padding: 10px;
+
+    text-shadow: 2px 2px 2px var(--corP);
+}
+
+nav > a:hover{
+    transition: 0.4s;
+
+    background-color: var(--corAC);
+    border-radius: 5px;
+    color: var(--corP);
+    text-shadow: 0px 0px 0px white;
+}
+
+img{
+    width: 100%;
+}
+
+#img2{
+    max-width: 30%;
+
+    display: block;
+    margin: auto;
+}
+
+#img3{
+    max-width: 30%;
+
+    display: block;
+    margin: auto;
+}
+
+/* PRINCIPAL =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  = */
+
+main{
+    background-color: #e7f2ff;
+    box-shadow: 0px 10px 10px 2px rgba(0, 0, 0, 0.400);
+    
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 0px 0px 10px 10px;
+
+    min-width: 320px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+main h1, h2 {
+    font-family: var(--fontPerso);
+    padding: 5px 0px;
+    font-weight: 500;
+
+    padding-bottom: 20px ;
+}
+
+main h1{
+    font-size: 2em;
+}
+
+main p{
+    font-family: var(--fontPadrao);
+    text-align: justify; 
+    text-indent: 20px;  /*PARAGRAFO ESPAÇAMENTO */
+    line-height: 1.8em; /*ALTURA ENTRE AS LINHAS */
+    font-size: 1.08em;
+}
+
+main a{
+    text-decoration: none;
+    color: var(--corP);
+    font-weight: bold;
+    color: var(--corP);
+    
+    padding: 2px 0px;
+    border-radius: 6px;
+    background-image: linear-gradient(to right,  var(--corAC)40%, rgba(255, 255, 255, 0));
+}
+
+main a:hover{
+    transition: 0.2s;
+    color: var(--corAE);
+}
+
+main a::after{
+    content: '🔗';
+}
+
+#ano{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+input{
+    display: block;
+    margin: auto;
+
+    width: 80px;
+    height: 80px;
+
+    border: none;
+    border-radius: 50%;
+    background-image: linear-gradient(60deg, rgb(161, 161, 161), var(--corP)30%);
+    
+    color: var(--corB);
+    cursor: pointer;
+
+    margin-bottom: 10px;
+   
+}
+input:hover{
+    transition: 0.5s;
+    text-shadow: 0px 0px 8px var(--corB);
+    color: white;
+
+    background-image: linear-gradient(60deg, rgb(255, 255, 255), var(--corP)50%);
+}
+
+main strong{
+    color: var(--corAE);
+    text-shadow: 0px 0px 1.3px var(--corP);
+}
+
+.video{
+    background-color: black;
+    
+    padding: 10px;
+    margin: 0px -20px 0px -20px; 
+    
+    position: relative;
+    padding-top: 56.25%; /* Proporção 16:9 */
+    height: 0;
+    overflow: hidden;
+}
+
+div > iframe{
+    position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+}
+
+aside{
+    background-color: var(--corAC);
+
+    padding: 10px;
+    border-radius: 10px;
+
+    margin-top: 10px;
+}
+
+aside ul{
+    list-style-position: inside;  /*BOLINHA LADO DE DENTRO */
+    columns: 2;
+    list-style-type: '🍎';
+    /* MANEIRA ERRADA O CERTO É USAR CODIGO */
+}
+
+aside h3{
+    background-color: var(--corAE);
+    padding: 5px;
+
+    margin: -10px -10px 10px -10px;
+    border-radius: 5px 5px 0px 0px;
+}
+aside p{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    line-height: 1.4;
+}
+/* RODAPÉ =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  =  = */
+
+footer{
+    margin-top: 36px;
+
+    color: var(--corB);
+    background-color: var(--corP);
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8em;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--corB);
+    font-weight: bolder;
+}
+
+footer a::after{
+    content: '🔗';
+}
+
+footer a:hover{
+    text-decoration: underline;
+
+    transition: 0.4s;
+    text-shadow: 0px 0px 2px var(--corB);
+}
