@@ -25,7 +25,7 @@
 /*MODIFICAÇÃO GLOBAL*/
 *{  
     padding: 0px;
-    margin: 0px /*DEIXAR 0 DEPOIS DEIXAR 0 DEPOIS DEIXAR 0 DEPOIS DEIXAR 0 DEPOIS DEIXAR 0 DEPOIS DEIXAR 0 DEPOISDEIXAR 0 DEPOISDEIXAR 0 DEPOIS*/
+    margin: 0px;
 }
 
 body{
@@ -61,9 +61,13 @@ header > p{
 nav{
     color:var(--corB);
     background-color: var(--corAE);
-    padding: 10px;
+    padding: 2px;
 
     box-shadow: 0px 3px 10px 3px rgba(0, 0, 0, 0.450);
+
+    display: flex;
+    gap: 4px;
+    align-items: center;
 }
 
 nav > a{
@@ -72,7 +76,7 @@ nav > a{
     text-decoration: none;
     color: var(--corB);
     padding: 10px;
-
+    /* background-color: red; */
     text-shadow: 2px 2px 2px var(--corP);
 }
 
